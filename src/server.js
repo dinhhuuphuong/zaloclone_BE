@@ -6,6 +6,9 @@ import { APIs_V1 } from '~/routes/v1'
 import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
 import cookieParser from 'cookie-parser'
 import { app, server } from './sockets/socket'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const PORT = process.env.PORT ?? env.APP_PORT ?? 8022
 
