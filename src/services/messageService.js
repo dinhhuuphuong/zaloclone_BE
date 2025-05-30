@@ -7,8 +7,7 @@ import { S3Provider } from '~/providers/S3Provider';
 import { userModel } from '~/models/userModel';
 import axios from 'axios';
 import { env } from '~/config/environment';
-import axios from 'axios';
-import { env } from '~/config/environment';
+
 const sendMessage = async (userID, receiverId, message) => {
     try {
         if (userID === receiverId) {
